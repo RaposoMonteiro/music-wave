@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+:root{
+    --blue-violet: rgb(138, 43, 227);
+    --yellow-green: rgb(15, 235, 15);
+}
+
+body{
+    background-color: rgb(34, 33, 33);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.music{
+    width: 300px;
+    height: 200px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.music .bar{
+    width: 12px;
+    border-radius: 10px;
+    background: white;
+    animation: movement 1.5s ease-in-out infinite;
+}
+@keyframes movement{
+    0%, 100%{
+        height: 2px;
+    }
+    50%{
+        height: 80px;
+    }
+}
+.music .bar:nth-child(1){
+    background: var(--blue-violet);
+    animation-delay: 1s;
+}
+.music .bar:nth-child(1){
+    background: var(--yellow-green);
+    animation-delay: 1s;
+}
+.music .bar:nth-child(2){
+    background: var(--blue-violet);
+    animation-delay: .8s;
+}
+.music .bar:nth-child(3){
+    background: var(--yellow-green);
+    animation-delay: .6s;
+}
+.music .bar:nth-child(4){
+    background: var(--blue-violet);
+    animation-delay: .4s;
+}
+.music .bar:nth-child(5){
+    background: var(--yellow-green);
+    animation-delay: .2s;
+}
+.music .bar:nth-child(6){
+    background: var(--blue-violet);
+    animation-delay: .2s;
+}
+.music .bar:nth-child(7){
+    background: var(--yellow-green);
+    animation-delay: .4s;
+}
+.music .bar:nth-child(8){
+    background: var(--blue-violet);
+    animation-delay: .6s;
+}
+.music .bar:nth-child(9){
+    background: var(--yellow-green);
+    animation-delay: .8s;
+}
+.music .bar:nth-child(10){
+    background: var(--blue-violet);
+    animation-delay: 1s;
+}
